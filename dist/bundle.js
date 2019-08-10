@@ -90,10 +90,22 @@
 /*!*********************************!*\
   !*** ./src/javascript/index.js ***!
   \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log(\"Hi\");\n\n//# sourceURL=webpack:///./src/javascript/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/main.scss */ \"./src/sass/main.scss\");\n/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sass_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log(\"Hi\");\n\n//# sourceURL=webpack:///./src/javascript/index.js?");
+
+/***/ }),
+
+/***/ "./src/sass/main.scss":
+/*!****************************!*\
+  !*** ./src/sass/main.scss ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/sass/main.scss?");
 
 /***/ })
 
