@@ -1,5 +1,6 @@
 // Webpack uses this to work with directories
 const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 // This is main configuration object.
 // Here you write different options and tell Webpack what to do
@@ -36,6 +37,12 @@ module.exports = {
                 // The first loader will be applied after others
                 use: [
                     {
+                        // After all CSS loaders we use plugin to do his work.
+                        // It gets all transformed CSS and extracts it into separate
+                        // single bundled file
+                        loader: MiniCssExtractPlugin.loader
+                    },
+                    {
                         // This loader resolves url() and @imports inside CSS
                         loader: "css-loader",
                     },
@@ -51,9 +58,32 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                // Now we apply rule for images
+                test: /\.(png|jpe?g|gif|svg)$/,
+                use: [
+                    {
+                        // Using file-loader for these files
+                        loader: "file-loader",
+                        
+                        // In options we can set different things like format
+                        // and directory to save
+                        options: {
+                            outputPath: 'images'
+                        }
+                    }
+                ]
             }
-        ]
+        ],
     },
+    plugins: [
+        
+        new MiniCssExtractPlugin({
+            filename: "bundle.css"
+        })
+        
+    ],
     
     // Default mode for Webpack is production.
     // Depending on mode Webpack will apply different things
