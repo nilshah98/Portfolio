@@ -15,6 +15,8 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
+
+    watch: true,
     
     module: {
         rules: [
@@ -48,7 +50,7 @@ module.exports = {
                     },
                     {
                         // Then we apply postCSS fixes like autoprefixer and minifying
-                        loader: "postcss-loader"
+                        loader: "postcss-loader",
                     },
                     {
                         // First we transform SASS to standard CSS
@@ -56,7 +58,7 @@ module.exports = {
                         options: {
                             implementation: require("sass")
                         }
-                    }
+                    },
                 ]
             },
             {
