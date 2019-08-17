@@ -2,4 +2,21 @@
 // Following BEM naminc convention, can be found here - http://getbem.com/introduction/
 // All imports go here
 
+// Base
 @import "base/base";
+@import "base/typography";
+
+// Components
+@import "components/heading";
+
+// Layout
+@import "layout/nav";
+@import "layout/page";
+
+// Pages
+
+// Themes
+
+// Utils
+
+// Vendors

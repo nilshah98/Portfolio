@@ -1,0 +1,38 @@
+.heading{
+
+    position: absolute;
+    bottom: -1.5rem;
+    display: flex;
+    align-items: center;
+
+    &__container{
+        position: relative;
+    }
+
+    &__image{
+        img{
+            width: 30rem;
+            height: auto;
+        }
+    }
+
+    &__number{
+        bottom: 0;
+        font-size: 5rem;
+        font-weight: 600;
+    }
+
+    &__break{
+        height: 6rem;
+        width: 3px;
+        background: var(--color-primary);
+        margin: 0 .5rem 0 .5rem;       
+    }
+
+    &__vertical{
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        font-weight: 300;
+    }
+
+}

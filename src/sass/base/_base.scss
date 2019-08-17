@@ -3,10 +3,10 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 :root {
-    --color-primary: #f56a6a;
+    --color-primary: #6c63ff;
     --color-white: #fff;
     --color-white-dark: #ddd;
     --color-black: #222;
@@ -15,7 +15,10 @@
   }
 
 html {
+    // Using this, since can give padding and margin in rem
+    // The accordingly change font-size for mobile devices
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,4 +28,5 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--color-black);
 }

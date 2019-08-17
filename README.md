@@ -29,3 +29,17 @@
 - live-server supports live-reloading by default
 - `npm install -g live-server`
 
+
+## Animations
+### Done
+- Using [AOS](https://github.com/michalsnik/aos) to do basic fade-in fade-out on scroll animation in heading vertical lines
+- Can't figure out how to enable AOS even for scroll-up, using `mirror` attribute for now
+- For the navbar animation, getting the whole height of the document, since it is loaded in one shot, and no lazy loading or infinite scroll
+- Then dividing it into sections and toggling classes on the current location of the page
+- Current location of page calculated usin `window.pageYoffset` and accordingly different classes toggled
+- Using `scroll` event on the window to hit it every time
+
+### Todo
+- Scroll-up animation AOS
+- Decreasing polling rate for `scroll` event
+- Alternative to `scroll-behaviour` property for smooth-scroll

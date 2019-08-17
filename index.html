@@ -1,10 +1,141 @@
 <html>
-    <head>
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="./dist/bundle.css">
-    </head>
-    <body>
-        Live Reload!
-        <script src="./dist/bundle.js"></script>
-    </body>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./dist/bundle.css">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+    <div class="nav__container">
+        <div class="nav">
+            <div class="nav__logo"></div>
+            <div class="nav__items-container">
+                <div class="nav__items">
+                    <div class="nav__items--item">
+                        <a href="#about">About</a>
+                        <div class="nav__items--underline"></div>
+                    </div>
+                    <div class="nav__items--item">
+                        <a href="#work">Work</a>
+                        <div class="nav__items--underline"></div>
+                    </div>
+                    <div class="nav__items--item">
+                        <a href="#projects">Projects</a>
+                        <div class="nav__items--underline"></div>
+                    </div>
+                    <div class="nav__items--item">
+                        <a href="#contact">Contact</a>
+                        <div class="nav__items--underline"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="page__container" id="about">
+            <div class="page">
+                <div class="heading__container">
+                    <div class="heading__image">
+                        <img src="src/assets/images/undraw_a_moment_to_relax.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <div class="heading__number">
+                            01
+                        </div>
+                        <div 
+                        data-aos="fade-down"
+                        class="heading__break"></div>
+                        <div class="heading__vertical">
+                            About
+                        </div>
+                    </div>
+                </div>
+                <div class="content__container">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="page__container" id="work">
+            <div class="page">
+                <div class="heading__container">
+                    <div class="heading__image">
+                        <img src="src/assets/images/undraw_web_developer.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <div class="heading__number">
+                            02
+                        </div>
+                        <div 
+                        data-aos="fade-down"
+                        class="heading__break"></div>
+                        <div class="heading__vertical">
+                            Work
+                        </div>
+                    </div>
+                </div>
+                <div class="content__container">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="page__container" id="projects">
+            <div class="page">
+                <div class="heading__container">
+                    <div class="heading__image">
+                        <img src="src/assets/images/undraw_ideas.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <div class="heading__number">
+                            03
+                        </div>
+                        <div 
+                        data-aos="fade-down"
+                        class="heading__break"></div>
+                        <div class="heading__vertical">
+                            Projects
+                        </div>
+                    </div>
+                </div>
+                <div class="content__container">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="page__container" id="contact">
+            <div class="page">
+                <div class="heading__container">
+                    <div class="heading__image">
+                        <img src="src/assets/images/undraw_social_thinking.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <div class="heading__number">
+                            04
+                        </div>
+                        <div 
+                        data-aos="fade-down"
+                        class="heading__break"></div>
+                        <div class="heading__vertical">
+                            Contact
+                        </div>
+                    </div>
+                </div>
+                <div class="content__container">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            offset="100",
+            duration="1000",
+            easing="ease-in-out",
+            once="false",
+            anchorPlacement="top-center",
+            mirror="true"
+        );
+    </script>
+    <script src="./dist/bundle.js"></script>
+</body>
 </html>
