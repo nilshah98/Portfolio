@@ -7,6 +7,7 @@
 }
 :root {
     --color-primary: #6c63ff;
+    --color-secondary: #f9812a;
     --color-white: #fff;
     --color-white-dark: #ddd;
     --color-black: #222;
@@ -19,6 +20,7 @@ html {
     // The accordingly change font-size for mobile devices
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -29,4 +31,10 @@ body {
 a {
     text-decoration: none;
     color: var(--color-black);
+}
+
+@media only screen and (max-width: 600px){
+    html{
+        font-size: 40%;
+    }
 }

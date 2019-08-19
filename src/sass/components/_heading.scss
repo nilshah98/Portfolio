@@ -1,7 +1,7 @@
 .heading{
 
     position: absolute;
-    bottom: -1.5rem;
+    bottom:  -3rem;
     display: flex;
     align-items: center;
 
@@ -9,9 +9,26 @@
         position: relative;
     }
 
+    &__backdrop{
+        width: 10rem;
+        height: 20rem;
+        position: absolute;
+        z-index: -2;
+        background: var(--color-secondary);
+        opacity: 0.7;
+
+        &--left{
+            left: 2rem;
+        }
+
+        &--right{
+            left: 15rem;
+        }
+    }
+
     &__image{
         img{
-            width: 30rem;
+            width: 25rem;
             height: auto;
         }
     }
@@ -34,5 +51,4 @@
         text-orientation: mixed;
         font-weight: 300;
     }
-
 }
