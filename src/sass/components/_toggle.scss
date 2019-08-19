@@ -1,0 +1,39 @@
+.toggle{
+    position: fixed;
+    top: 10rem;
+    right: 2rem;
+    z-index: 9999;
+
+    input[type=checkbox]{
+        outline: none;
+        background: #ddd;
+        appearance: none;
+        height: 2rem;
+        width: 4rem;
+        border-radius: 2rem;
+        transition: all .3s linear;
+        // border: 1px solid var(--color-black);
+    }
+
+    input[type=checkbox]:checked{
+        background: #000;
+    }
+
+    input[type=checkbox]::before{
+        content: " ";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 2rem;
+        height: 2rem;
+        background: var(--color-primary);
+        transform: scale(1.1);
+        border-radius: 2rem;
+        box-shadow: 0 0 .5rem rgba(0,0,0,0.5);
+        transition: all .3s linear;
+    }
+
+    input[type=checkbox]:checked::before{
+        left: 2rem;
+    }
+}
