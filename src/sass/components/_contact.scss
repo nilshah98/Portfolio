@@ -1,0 +1,23 @@
+.contact{
+
+    &__linkContainer{
+
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__icon{
+        font-size: 3.5rem;
+    }
+
+    &__name{
+        font-size: 1.5rem;
+    }
+}

@@ -43,3 +43,25 @@
 - Scroll-up animation AOS
 - Decreasing polling rate for `scroll` event
 - Alternative to `scroll-behaviour` property for smooth-scroll
+
+## Components
+
+### Toggle
+#### Done
+- Created a toggle switch from scratch, by using `checkbox` elements and [before](https://css-tricks.com/almanac/selectors/a/after-and-before/) psuedo element
+- Manipluated it using the `checked` property of the same
+- Event listener used - `changed` on the input box
+- Can be found under `components/_toggle`
+#### Todo
+- Beautify the component
+
+### Heading
+#### Done
+- Under `heading__container` three components- `backdrop`, `image` and `heading`
+- Backdrop and heading absolutely placed, and image holding the container size together, else it will collapse
+- Used illustrations from [undraw](https://undraw.co/illustrations) for heading component
+- Heading component has - `number`,`break` and `vertical` all aligned using flex 
+- Used the property `writing-mode` and `text-orientation` to get vertical text
+- Used AOS library for scroll animations for vertical break bar
+#### Todo
+- Beautify the backdrop, *maybe polka dots*
