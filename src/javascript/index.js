@@ -7,6 +7,7 @@ const navElements = document.getElementsByClassName("nav__items--item");
 const greet = document.getElementsByClassName("about__greet")[0];
 const root = document.documentElement;
 const toggle = document.querySelectorAll("input[type=checkbox]")[0];
+const resume = document.getElementsByClassName("resume")[0];
 
 const height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
 let currHeight = 0;
@@ -93,5 +94,9 @@ toggle.addEventListener("change",(e) => {
     else{
         mode("morning");
     }
+})
+
+resume.addEventListener("click",(e) => {
+    window.open('../src/assets/nilshah98-resume.pdf');
 })
 // ============================================ Everything else ===================================
