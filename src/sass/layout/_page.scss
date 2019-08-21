@@ -9,14 +9,15 @@
         position: relative;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     &__left{
-        width: 50%;
+        width: 48%;
     }
 
     &__right{
-        width: 50%;
+        width: 48%;
     }
 
     &__heading{

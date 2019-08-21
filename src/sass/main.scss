@@ -10,6 +10,7 @@
 @import "components/toggle";
 @import "components/carousel";
 @import "components/accordion";
+@import "components/card";
 
 // Layout
 @import "layout/nav";
@@ -17,11 +18,11 @@
 @import "layout/heading";
 @import "layout/quote";
 @import "layout/content";
-@import "layout/about";
-@import "layout/contact";
-
 
 // Pages
+@import "pages/about";
+@import "pages/contact";
+@import "pages/work";
 
 // Themes
 

@@ -1,0 +1,36 @@
+.card{
+    
+    &__container{
+        width: 50%;
+        padding: 1rem 2rem;
+        border: 1px solid var(--color-black);
+        margin: 1rem;
+        border-radius: 5px;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    &__heading{
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    &__footer{      
+        text-align: center;
+        text-decoration: double;
+        i{
+            font-size: 2rem;
+        }
+    }
+    
+    &__content li{
+        margin: 3px 0;
+        &:before{
+            content: "●";
+            color: var(--color-secondary);
+            padding-right: 5px;
+        }
+    }
+}

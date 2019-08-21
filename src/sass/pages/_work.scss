@@ -1,0 +1,21 @@
+.work{
+    &__content{
+        li{
+            margin: 3px 0;
+            &:before{
+                content: "●";
+                color: var(--color-secondary);
+                padding-right: 5px;
+            }
+        }
+    }
+    
+    &__timeline{
+        margin: 5px 0;
+        
+        .fa-calendar-alt{
+            font-size: 2rem;
+            margin-right: 2px;
+        }
+    }
+}

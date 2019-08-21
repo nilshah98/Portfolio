@@ -2,7 +2,7 @@
 
     &__container{
         width: 100%;
-        height: 25rem;
+        height: 40rem;
         overflow: hidden;
         position: relative;
     }
@@ -15,6 +15,8 @@
         background: var(--color-white);
         transform: translateX(0);
         transition: all .5s linear;
+        display: flex;
+        flex-direction: row;
 
         &.active{
             opacity: 1;
@@ -37,14 +39,22 @@
         bottom: 0;
         z-index: 2;
         cursor: pointer;
-        font-size: 3rem;
 
+        &::before{
+        }
         &--prev{
             left: 0;
+
+            &::before{
+                content: "◀";
+            }
         }
 
         &--next{
             right: 0;
+            &::before{
+                content: "▶";
+            }
         }
     }
 }
