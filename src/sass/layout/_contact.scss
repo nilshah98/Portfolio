@@ -2,13 +2,24 @@
 
     &__linkContainer{
         margin: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        padding: 2% 5%;
+    }
+
+    &__links{
+        position: relative;
+        width: 50%;
     }
 
     &__link{
         display: block;
         position: relative;
         width: 100%;
-        height: 3.5rem;
         margin: 1rem 0;
 
         &:hover{
@@ -16,24 +27,19 @@
 
             .contact__icon{
                 opacity: 0;
-                transform: translate(-2rem,-50%);
+                transform: translateX(-100%);
             }
 
             .contact__name{
                 opacity: 1;
-                transform: translate(-7rem,-50%);
+                transform: translateX(0);
             }
         }
     }
 
     &__icon{
-        position: absolute;
         font-size: 3.5rem;
         display: inline-block;
-        left: 1rem;
-
-        top: 50%;
-        transform: translateY(-50%);
         transition: all .3s ease-in-out;
 
         img{
@@ -43,14 +49,10 @@
     }
 
     &__name{
-        position: absolute;
         font-size: 1.5rem;
         display: inline-block;
-        left: 7rem;
         opacity: 0;
-
-        top: 50%;
-        transform: translateY(-50%);
+        transform: translateX(100%);
         transition: all .35s ease-in-out;
     }
 }

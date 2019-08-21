@@ -7,16 +7,19 @@
 @import "base/typography";
 
 // Components
-@import "components/heading";
-@import "components/content";
-@import "components/about";
 @import "components/toggle";
-@import "components/contact";
 @import "components/carousel";
+@import "components/accordion";
 
 // Layout
 @import "layout/nav";
 @import "layout/page";
+@import "layout/heading";
+@import "layout/quote";
+@import "layout/content";
+@import "layout/about";
+@import "layout/contact";
+
 
 // Pages
 

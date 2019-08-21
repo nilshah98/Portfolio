@@ -17,22 +17,25 @@
         transition: all .5s linear;
 
         &.active{
-            z-index: 9999;
+            opacity: 1;
+            z-index: 1;
         }
 
         &.prev{
             transform: translateX(-100%);
+            opacity: 0;
         }
 
         &.next{
             transform: translateX(100%);
+            opacity: 0;;
         }
     }
 
     &__button{
         position: absolute;
         bottom: 0;
-        z-index: 99999;
+        z-index: 2;
         cursor: pointer;
         font-size: 3rem;
 

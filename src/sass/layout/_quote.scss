@@ -1,0 +1,29 @@
+.quote{
+
+    &__container{
+        min-width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: justify;
+
+        .fa-quote-right{
+            font-size: 4rem;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            opacity: 0.4;
+        }
+
+        .fa-quote-left{
+            font-size: 4rem;
+            position: absolute;
+            opacity: 0.4;
+        }
+    }
+
+    &__content{
+        padding: 2rem 0;
+    }
+}
