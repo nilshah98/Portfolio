@@ -18,6 +18,7 @@
 
     &__right{
         width: 48%;
+        position: relative;
     }
 
     &__heading{
@@ -33,9 +34,14 @@
     }
 
     &__content{
-        height: 100%;
-        width: 100%;
-        position: relative;
+        min-width: 90%;
+        max-height: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 }
 
