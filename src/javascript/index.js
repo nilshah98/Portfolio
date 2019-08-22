@@ -29,11 +29,15 @@ let mode = (mode) => {
     if(mode == "morning"){
         root.style.setProperty('--color-white','#fff');
         root.style.setProperty('--color-black','#222');
+        // root.style.setProperty('--color-primary','#6c63ff');
+        // root.style.setProperty('--color-secondary','#f9812a');
         toggle.checked = false;
     }
     else{
         root.style.setProperty('--color-white','#222');
         root.style.setProperty('--color-black','#fff');
+        // root.style.setProperty('--color-primary','#f9812a');
+        // root.style.setProperty('--color-secondary','#6c63ff');
         toggle.checked = true;
     }
 } 

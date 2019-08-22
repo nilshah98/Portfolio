@@ -6,8 +6,12 @@
     <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
 </head>
 <body>
-    <div class="nav__container">
-        <div class="nav">
+    <div class="toggle">
+        <input type="checkbox">
+    </div>
+    
+    <nav>
+        <div class="nav__container">
             <div class="nav__logo"></div>
             <div class="nav__items-container">
                 <div class="nav__items">
@@ -30,11 +34,9 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="toggle">
-        <input type="checkbox">
-    </div>
-    <div class="main">
+    </nav>
+    
+    <main>
         <div class="page__container" id="about">
             <div class="page__left">
                 <div class="page__heading">
@@ -57,7 +59,10 @@
                     <div class="quote__container">
                         <i class="fas fa-quote-left"></i>
                         <div class="quote__content">
-                            To live is to risk it all, otherwise you’re just an inert chunk of randomly assembled molecules drifting wherever the universe blows you.
+                            The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.
+                        </div>
+                        <div class="quote__source">
+                            - Ralph Waldo Emerson
                         </div>
                         <i class="fas fa-quote-right"></i>
                     </div>
@@ -101,7 +106,10 @@
                     <div class="quote__container">
                         <i class="fas fa-quote-left"></i>
                         <div class="quote__content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odio adipisci, impedit quam quaerat deserunt. Quam fuga inventore maiores, illo soluta obcaecati quis, praesentium tempora earum quo, magnam accusantium!
+                            To live is to risk it all, otherwise you’re just an inert chunk of randomly assembled molecules drifting wherever the universe blows you.
+                        </div>
+                        <div class="quote__source">
+                            - Rick and Morty
                         </div>
                         <i class="fas fa-quote-right"></i>
                     </div>
@@ -207,6 +215,9 @@
                         <div class="quote__content">
                             Don’t ever let somebody tell you can’t do something, not even me. Alright? You dream, you gotta protect it. People can’t do something themselves, they wanna tell you can’t do it. If you want something, go get it. Period. 
                         </div>
+                        <div class="quote__source">
+                            - Pursuit Of Happyness
+                        </div>
                         <i class="fas fa-quote-right"></i>
                     </div>     
                 </div>
@@ -305,6 +316,9 @@
                         <div class="quote__content">
                             To see the world, things dangerous to come to, to see behind walls, to draw closer, to find each other and to feel. That is the purpose of life.
                         </div>
+                        <div class="quote__source">
+                            - The Secret Life Of Walter Mitty
+                        </div>
                         <i class="fas fa-quote-right"></i>
                     </div>
                     
@@ -312,7 +326,7 @@
             </div>
             <div class="page__right">
                 <div class="page__content">
-                    <div class="contact">
+                    <div class="contact__container">
                         <div class="contact__intro">
                             My online presence can be felt at any of the below links-
                         </div>
@@ -352,7 +366,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+    
+    
     <script src="./dist/bundle.js"></script>
 </body>
 </html>
