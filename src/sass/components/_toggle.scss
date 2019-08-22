@@ -4,6 +4,10 @@
     right: 2rem;
     z-index: 9999;
 
+    label{
+        display: none;
+    }
+
     input[type=checkbox]{
         outline: none;
         background: #ddd;

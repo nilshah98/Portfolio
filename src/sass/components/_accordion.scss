@@ -2,6 +2,9 @@
 
     &__container{
         overflow-x: hidden;
+        input[type=checked]{
+            display: none;
+        }
     }
     
     &__tab{
