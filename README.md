@@ -14,7 +14,7 @@ PS: *(Will be updated soon)*
 - [ ] Imrpove Accessiblity *Lighthouse*
 - [ ] Imrpove SEO *Lighthouse*
 - [ ] Improve Best Practices *Lighthouse*
-- [ ] Add SSL and HTTPS
+- [x] Add SSL and HTTPS
 - [ ] Add colors for accordion
 - [ ] Add colors for carousel-cards
 - [ ] Clean git commit messages and commits

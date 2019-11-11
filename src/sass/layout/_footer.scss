@@ -1,0 +1,32 @@
+.footer{
+
+    &__container{
+        text-align: center;
+        position: absolute;
+        width: 100vw;
+        transform: translateY(-5.5rem);
+    }
+
+    &__quote{
+        font-style: italic;
+        color: var(--color-secondary);
+    }
+
+    &__close{
+        cursor: pointer;
+        overflow: hidden;
+        padding-bottom: 1rem;
+
+        .fa-heart{
+            color: red;
+            transform: translateY(2rem);
+            opacity: 0;
+            transition: all .5s ease-in-out;
+        }
+
+        &:hover .fa-heart{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}

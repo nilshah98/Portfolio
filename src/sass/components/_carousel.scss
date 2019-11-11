@@ -17,6 +17,7 @@
         transition: all .5s linear;
         display: flex;
         flex-direction: row;
+        justify-content: center;
 
         &.active{
             opacity: 1;

@@ -14,7 +14,7 @@ const carouselButtonNext = document.getElementsByClassName("carousel__button--ne
 
 const height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
 let currHeight = 0;
-
+resume.style.cursor = "pointer";
 
 // ===================================== All helper functions go here =============================
 let activate = (num) => {
