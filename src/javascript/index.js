@@ -112,14 +112,14 @@ document.addEventListener("DOMContentLoaded",(e) => {
     }
 })
 
-document.addEventListener('visibilitychange',(e) => {
-    if(document.hidden){
-        document.title = "Notice me!";
-    }
-    else{
-        document.title = "nilshah98 Portfolio";
-    }
-})
+// document.addEventListener('visibilitychange',(e) => {
+//     if(document.hidden){
+//         document.title = "Notice me!";
+//     }
+//     else{
+//         document.title = "nilshah98 Portfolio";
+//     }
+// })
 
 toggle.addEventListener("change",(e) => {
     if(toggle.checked){
